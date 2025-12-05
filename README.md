@@ -14,6 +14,10 @@ A TUI (Terminal User Interface) tool for managing vmess subscription nodes.
 - 💾 **Persistence** - Save subscription URL, nodes, and latency results to config file
 - 🎨 **Beautiful TUI** - Clean terminal interface built with ratatui
 
+## Screenshot
+
+![subman screenshot](https://github.com/user-attachments/assets/324e4cf5-532b-4c57-a15b-a492ef259724)
+
 ## Installation
 
 ### Prerequisites
@@ -74,20 +78,6 @@ Configuration is stored at `~/.config/subman.json` and includes:
 2. **TCP Latency Test**: Direct TCP connection to each node's address and port
 3. **HTTP Latency Test**: Starts a temporary xray instance for each node and tests HTTP connectivity through the SOCKS5 proxy
 4. **Applying Nodes**: Generates xray config and sends SIGHUP to reload the service
-
-## Screenshots
-
-```
-┌─ Subscription Manager ───────────────────────────────────────────────────┐
-│   Name                  Address                   Port      TCP     HTTP │
-│ ● Node-US-1             us1.example.com           443       45ms    320ms│
-│   Node-JP-2             jp2.example.com           443       120ms   450ms│
-│   Node-SG-3             sg3.example.com           8443      85ms    380ms│
-└──────────────────────────────────────────────────────────────────────────┘
-┌──────────────────────────────────────────────────────────────────────────┐
-│ Loaded 3 nodes. Press R to refresh, t/T to test.                         │
-└──────────────────────────────────────────────────────────────────────────┘
-```
 
 ## License
 
